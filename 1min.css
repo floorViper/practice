@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-size: 2em;
+}
+h1,
+p {
+  margin: 0;
+}
+.container {
+  max-width: 1000px; /*유연하게 움직이되, 최대 1000*/
+  margin: 0 auto;
+  font-size: 0; /*inline-block 특성상 공백이 포함된 태그때문에 0*/
+}
+.item {
+  display: inline-block;
+  vertical-align: top;
+  /* width: 100%; 콘텐트박스모델로 100%+5% 스크롤생기므로 안쓴다.*/
+  padding: 5%;
+  font-size: 1rem; /*공통요소에 font 복구*/
+}
+.item-a {
+  /* 콘텐트박스모텔이기때문에 10% 뺀다. 보더박스일경우 40%,60%로한다.*/
+  width: 30%;
+  background-color: yellow;
+}
+.item-b {
+  width: 50%;
+  background-color: yellowgreen;
+}

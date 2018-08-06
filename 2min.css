@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-size: 2em;
+}
+h1,
+p {
+  margin: 0;
+}
+.container {
+  /* max-width: 1000px; */
+  /*유연하게 움직이되, 최대 1000*/
+  /* margin: 0 auto; */
+  background-color: pink;
+}
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+  /*혹시 공간 차지할까봐...해도되고 안해도됨*/
+  height: 0;
+  visibility: hidden;
+}
+.item {
+  float: left;
+  /* width: 100%; 콘텐트박스모델로 100%+5% 스크롤생기므로 안쓴다.*/
+  padding: 5%;
+}
+.item-a {
+  /* 콘텐트박스모텔이기때문에 10% 뺀다. 보더박스일경우 40%,60%로한다.*/
+  width: 30%;
+  background-color: yellow;
+}
+.item-b {
+  width: 50%;
+  background-color: yellowgreen;
+}
+footer {
+  /* clear: both; */
+  background-color: gray;
+}

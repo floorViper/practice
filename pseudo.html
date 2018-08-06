@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .counter {
+      margin: 50px 0 0 20px;
+      background-color: skyblue;
+      /* display: inline-block; */
+      width: 200px;
+      height: 30px;
+    }
+
+    .button {
+
+      /* display: inline; */
+      /* vertical-align: middle; */
+      line-height: 30px;
+      height: 100%;
+      float: right;
+      background-color: grey;
+      position: relative;
+    }
+
+    .button:after {
+      content: attr(title);
+      background-color: orangered;
+      color: white;
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 12px;
+      padding: 0 1rem;
+      white-space: nowrap;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      opacity: 0.1;
+      transition: all 0.5s;
+    }
+
+    .button:hover:after {
+      opacity: 1;
+      top: -30px;
+      left: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="counter">
+    <a class="button" title="mytool">버튼</a>
+  </div>
+</body>
+
+</html>

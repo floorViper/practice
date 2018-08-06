@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const endpoint = 'https://viperbit.github.io/jsonrepo/tmon.json';
+    let orders = [];
+
+    fetch(endpoint)
+      .then(blob =>
+        blob.json()
+      )
+      .then(data => {
+        //var data1 = data.orders
+        return orders.push(...data.orders)
+      })
+      .then(() => {
+        console.log('orders1', orders[0]); // 0번 배열 출력됨
+        console.log('orders', orders);
+      })
+
+    console.log('orders2', orders);  //  100개 배열 출력
+    console.log('orders3', orders[0]);  //  100개 배열 출력
+
+
+  </script>
+</body>
+
+</html>

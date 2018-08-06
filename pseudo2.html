@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    li {
+      list-style: none;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .wrapper {
+      width: 800px;
+      margin: 0 auto
+    }
+
+    .bread li {
+      float: left;
+    }
+
+    .bread li a {
+      display: block;
+      padding: 0.5em;
+      /* outline: 1px dotted; */
+    }
+
+    .bread li a::after {
+      content: ' ';
+      background-image: url(./breakin4.jpg);
+      display: inline-block;
+      width: 10px;
+      height: 15px;
+      background-size: cover;
+      background-position: right;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <ui class="bread">
+      <li>
+        <a href="">home</a>
+      </li>
+      <li>
+        <a href="">winter</a>
+      </li>
+      <li>
+        <a href="">product</a>
+      </li>
+      <li>
+        <a href="">tree</a>
+      </li>
+      <li>
+        <a href="">wood</a>
+      </li>
+    </ui>
+  </div>
+</body>
+
+</html>

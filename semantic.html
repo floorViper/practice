@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>헤더</header>
+  <nav>nav1</nav>
+  <nav>nav2</nav>
+  <main>
+
+
+    <section>section1
+      <article>article1</article>
+    </section>
+    <article>article2</article>
+    <section>section2</section>
+    <aside>aside1</aside>
+    <aside>asise2</aside>
+    <footer>footer</footer>
+  </main>
+  <script>
+
+    function F() { };
+    console.log(F.prototype);
+
+    F.prototype.prop = "prototype value";
+    F.prop = "Fprop";
+    var obj = new F();
+    console.log(obj.prop);
+    console.log(F.prop)
+    obj.prop = "instance value";
+    console.log(obj.prop);
+    console.log(F.prototype.prop);
+  </script>
+</body>
+
+</html>

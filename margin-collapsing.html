@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: grey;
+    }
+
+    .parents {
+      background-color: white;
+      width: 300px;
+      margin: 0 auto;
+      /*마진이 자식요소와 겹쳐 0px이 됌*/
+      /* padding: 1px; */
+      /* border: 1px solid transparent; */
+      /*가장 안정적인 해결법*/
+      overflow: hidden;
+    }
+
+    .children {
+      line-height: 200px;
+      width: 200px;
+      height: 200px;
+      background-color: orangered;
+      color: rgba(255, 255, 255, 0.2);
+      font-size: 200px;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parents">
+    <div class="children">A</div>
+    <div class="children">B</div>
+  </div>
+</body>
+
+</html>

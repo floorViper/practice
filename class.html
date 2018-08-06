@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    class Person {
+      constructor(name) {
+        this.name = name;
+      }
+
+      set name(value) {
+        this._name = value;
+      }
+      get name() {
+        console.log('get')
+        return this._name;
+      }
+
+      sayName() {
+        console.log(this.name);
+      }
+    }
+    var person = new Person('Tom');
+    console.log(person.name)
+    console.log('person', person)
+    person.name = 'GG'
+    console.log(person.name);
+
+  </script>
+</body>
+
+</html>
