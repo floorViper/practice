@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>centering</title>
+    <style>
+      body {
+        background-color: #ddd;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>centering</title>
-  <style>
-    body {
-      background-color: #ddd;
-    }
+      /* 이방법들은 height값이 고정이라 유동적일수 없다.  */
+      .center {
+        background-color: orange;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        top: 50%;
+        margin-top: -150px;
+      }
 
-    /* 이방법들은 height값이 고정이라 유동적일수 없다. */
+      /* width, height 를 설정하지 않으면 마진,패딩으로 정렬 가능 */
 
-    /* .center {
-      background-color: orange;
-      width: 300px;
-      height: 300px;
-      position: absolute;
-      left: 50%;
-      margin-left: -150px;
-      top: 50%;
-      margin-top: -150px;
-    } */
+      /* .center {
+        background: orange;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 400px;
+        height: 400px;
+        margin: auto;
+      } */
+    </style>
+  </head>
 
-    /* width, height 를 설정하지 않으면 마진,패딩으로 정렬 가능 */
-
-    .center {
-      background: orange;
-      position: absolute;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      top: 0;
-      width: 300px;
-      height: 300px;
-      margin: auto;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="center">wow</div>
-</body>
-
+  <body>
+    <div class="center">wow</div>
+  </body>
 </html>

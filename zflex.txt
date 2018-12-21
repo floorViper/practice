@@ -1,0 +1,23 @@
+플렉스박스
+감싸는 콘텐츠 속성
+.container {
+  display:flex; //자식들을 플렉스속성으로 정렬하겠다
+  flex-direction: row | column 꼬치 축이 --- , |  리버스속성
+  flex-wrap: wrap | nowrap 노랩이 기본값. 컨테이너를 감싸서 브라우저창을 줄일때 모든게 나오게 밑으로 떨어지도록.  리버스속성 
+  justify-content: flex-start | center | flex-end | space-between | space-around; //
+  1.플렉스 디렉션 값의 축을 기준으로 좌우가운데 정렬. 2.여백을 똑같이 나눠갖게. 3. 좌우여백을 똑같이 나눠갖게
+  align-items: stretch | flex-start | flex-end | center 축 기준으로 상하 위치 1.기본값(느러나게) 
+  align-content: flex-start | center | flex-end | space-between | space-around; flex-wrap wrap일때 align축으로 정렬
+}
+각각의 개별 속성
+.item {
+  flex-grow: 1 //여백을 나눠갖으며 늘어난다.
+  flex-basis: 0 //원래 차지하는 공간을 0으로 주어 모든 여백을 나눠갖게해 .item:nth-child(1)..같은 것들이 1:1:1같은 비율이 가능하게한다.
+  flex-shirink: 1 //여백을 나눠갖으며 줄어든다.
+
+  flex:1 ; 위 세개의 축약형. 그리고, 개별 설정된경우 자기 영역을 모두 채운다.
+  align-self: flex-start | center | flex-end ; 축기준 각각의 align 위치를 지정할수있다.
+  order: 1~자식들 개별의 순서 지정
+}
+
+
